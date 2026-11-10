@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Timepieces | The Elegant Quartz Set</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            dark: '#111111',
+                            light: '#FAFAFA'
+                        }
+                    },
+                    animation: {
+                        'bounce-slow': 'bounce 3s infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Smooth scrolling and basic resets */
+        html { scroll-behavior: smooth; }
+        body { background-color: #FAFAFA; color: #111111; }
+        
+        /* Subtle pulsing effect for the primary CTA */
+        @keyframes pulse-soft {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+        }
+        .btn-pulse {
+            animation: pulse-soft 2s infinite ease-in-out;
+        }
+
+        /* Hide scrollbar for clean look */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #888; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #555; }
+    </style>
+</head>
+<body class="antialiased font-sans flex flex-col min-h-screen">
+
+    <!-- Announcement Bar -->
+    <div class="bg-brand-dark text-white text-center py-2 text-xs md:text-sm font-medium tracking-wide">
+        ⚡ FLASH SALE: 50% OFF + FREE WORLDWIDE SHIPPING ⚡
+    </div>
+
+    <!-- Navigation -->
+    <nav class="w-full bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center cursor-pointer">
+                    <span class="font-serif text-2xl font-bold tracking-tighter">AURA<span class="text-brand-gold">.</span></span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#buy-now" class="text-sm font-medium text-gray-700 hover:text-brand-dark transition hidden md:block">Shop Now</a>
+                    <a href="#reviews" class="text-sm font-medium text-gray-700 hover:text-brand-dark transition hidden md:block">Reviews</a>
+                    <a href="#buy-now" class="bg-brand-dark text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="flex-grow">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                
+                <!-- Product Image (Mobile First) -->
+                <div class="order-1 md:order-2 relative group">
+                    <div class="absolute inset-0 bg-brand-gold rounded-full opacity-10 blur-3xl group-hover:opacity-20 transition duration-700"></div>
+                    <img 
+                        src="https://img.kwcdn.com/product/open/1308552bb8de418fbedea65bab6dffd1-goods.jpeg" 
+                        alt="Elegant Quartz Wristwatch Set" 
+                        class="relative w-full h-auto object-cover rounded-2xl shadow-2xl z-10 transform transition duration-500 hover:scale-[1.02]"
+                    >
+                    <!-- Trust Badge Overlay -->
+                    <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur px-4 py-3 rounded-xl shadow-lg z-20 flex justify-between items-center border border-gray-100">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="text-xs font-semibold text-gray-800">Verified Quality</span>
+                        </div>
+                        <div class="flex text-brand-gold">
+                            ★★★★★
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Details & Checkout -->
+                <div class="order-2 md:order-1 flex flex-col justify-center space-y-6">
+                    <div>
+                        <div class="inline-flex items-center space-x-2 bg-rose-50 text-rose-600 px-3 py-1 rounded-full text-xs font-bold mb-4 uppercase tracking-wide border border-rose-100">
+                            <span class="relative flex h-2 w-2">
+                              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
+                              <span class="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span>
+                            </span>
+                            Trending Now
+                        </div>
+                        <h1 class="text-4xl md:text-5xl font-serif font-bold leading-tight text-gray-900 mb-4">
+                            Elegance Redefined. <br><span class="text-gray-500 italic text-3xl md:text-4xl">The Vibrant Quartz Set</span>
+                        </h1>
+                        <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                            Make a statement. This complete trendy quartz wristwatch set is the ultimate accessory for any occasion. Perfect for gifting or elevating your daily style.
+                        </p>
+                    </div>
+
+                    <!-- Pricing & Urgency -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="flex items-end space-x-3 mb-2">
+                            <span class="text-4xl font-bold text-gray-900">$29.99</span>
+                            <span class="text-lg text-gray-400 line-through mb-1">$59.99</span>
+                            <span class="text-sm font-semibold text-green-600 bg-green-50 px-2 py-1 rounded mb-1">Save 50%</span>
+                        </div>
+                        
+                        <!-- Countdown Timer -->
+                        <div class="mt-4 bg-gray-50 rounded-xl p-4 border border-gray-100">
+                            <div class="text-sm font-medium text-gray-800 text-center mb-2 flex items-center justify-center space-x-2">
+                                <svg class="w-4 h-4 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>Sale ends in:</span>
+                            </div>
+                            <div class="flex justify-center space-x-4 text-center">
+                                <div class="flex flex-col">
+                                    <span id="hours" class="text-2xl font-bold text-gray-900 bg-white shadow-sm rounded-lg px-3 py-1 w-12 border border-gray-200">02</span>
+                                    <span class="text-[10px] uppercase text-gray-500 mt-1 font-semibold">Hours</span>
+                                </div>
+                                <span class="text-2xl font-bold text-gray-400 mt-1">:</span>
+                                <div class="flex flex-col">
+                                    <span id="minutes" class="text-2xl font-bold text-gray-900 bg-white shadow-sm rounded-lg px-3 py-1 w-12 border border-gray-200">45</span>
+                                    <span class="text-[10px] uppercase text-gray-500 mt-1 font-semibold">Mins</span>
+                                </div>
+                                <span class="text-2xl font-bold text-gray-400 mt-1">:</span>
+                                <div class="flex flex-col">
+                                    <span id="seconds" class="text-2xl font-bold text-gray-900 bg-white shadow-sm rounded-lg px-3 py-1 w-12 border border-gray-200">30</span>
+                                    <span class="text-[10px] uppercase text-gray-500 mt-1 font-semibold">Secs</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CTA Button -->
+                        <div class="mt-6" id="buy-now">
+                            <button class="w-full btn-pulse bg-brand-dark text-white py-4 px-8 rounded-xl text-lg font-bold hover:bg-gray-800 transition shadow-[0_8px_30px_rgb(0,0,0,0.12)] flex items-center justify-center group">
+                                <span>Claim 50% Off Now</span>
+                                <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </button>
+                        </div>
+                        
+                        <!-- Guarantees -->
+                        <div class="mt-4 grid grid-cols-3 gap-2 text-center">
+                            <div class="flex flex-col items-center">
+                                <svg class="w-5 h-5 text-gray-600 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                                <span class="text-[10px] text-gray-500">Free Shipping</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <svg class="w-5 h-5 text-gray-600 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                                <span class="text-[10px] text-gray-500">Secure Checkout</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <svg class="w-5 h-5 text-gray-600 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span class="text-[10px] text-gray-500">Money Back</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Features Section -->
+    <section class="bg-white py-16 md:py-24 border-t border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4">Crafted for the Modern Trendsetter</h2>
+                <p class="text-gray-600 text-lg">Every detail is designed to bring out your vibrant style without compromising on everyday functionality and precision.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Feature 1 -->
+                <div class="flex flex-col items-center text-center p-6 rounded-2xl bg-gray-50 hover:bg-gray-100 transition duration-300">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-6 border border-gray-200">
+                        <svg class="w-8 h-8 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Precision Quartz</h3>
+                    <p class="text-gray-600 leading-relaxed">Experience uncompromised accuracy. Our advanced quartz movement ensures you're always perfectly on time.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="flex flex-col items-center text-center p-6 rounded-2xl bg-gray-50 hover:bg-gray-100 transition duration-300">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-6 border border-gray-200">
+                        <svg class="w-8 h-8 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Vibrant & Elegant</h3>
+                    <p class="text-gray-600 leading-relaxed">A striking design that commands attention. Whether for a gala or a casual day out, it complements any look.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="flex flex-col items-center text-center p-6 rounded-2xl bg-gray-50 hover:bg-gray-100 transition duration-300">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-6 border border-gray-200">
+                        <svg class="w-8 h-8 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Complete Set</h3>
+                    <p class="text-gray-600 leading-relaxed">More than just a watch. This carefully curated set includes matching accessories for a unified, luxurious aesthetic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Reviews -->
+    <section id="reviews" class="bg-gray-900 text-white py-16 md:py-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Loved by Thousands</h2>
+                <div class="flex justify-center items-center space-x-2 text-brand-gold text-2xl mb-2">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <p class="text-gray-400">4.9/5 Average rating from 1,200+ customers</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
+                    <div class="flex text-brand-gold text-sm mb-4">★★★★★</div>
+                    <p class="text-gray-300 mb-6 italic">"Absolutely stunning! I bought this as a Valentine's gift for myself and I get compliments every single day. It looks incredibly expensive."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-gray-600 rounded-full flex items-center justify-center font-bold text-white">S</div>
+                        <div>
+                            <p class="font-bold text-white text-sm">Sarah M.</p>
+                            <p class="text-xs text-green-400">✔ Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
+                    <div class="flex text-brand-gold text-sm mb-4">★★★★★</div>
+                    <p class="text-gray-300 mb-6 italic">"The pictures don't do it justice. The quartz movement is silent and precise. Shipping was surprisingly fast. Highly recommend this set."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-gray-600 rounded-full flex items-center justify-center font-bold text-white">J</div>
+                        <div>
+                            <p class="font-bold text-white text-sm">Jessica T.</p>
+                            <p class="text-xs text-green-400">✔ Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
+                    <div class="flex text-brand-gold text-sm mb-4">★★★★★</div>
+                    <p class="text-gray-300 mb-6 italic">"Bought it for my sister's birthday and she cried. The packaging and the watch itself feel like a true luxury brand without the crazy price tag."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-gray-600 rounded-full flex items-center justify-center font-bold text-white">M</div>
+                        <div>
+                            <p class="font-bold text-white text-sm">Michael R.</p>
+                            <p class="text-xs text-green-400">✔ Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <button onclick="window.scrollTo(0,0)" class="bg-white text-gray-900 py-3 px-8 rounded-full font-bold hover:bg-gray-100 transition shadow-lg">
+                    Get Yours Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 pt-12 pb-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-2">
+                    <span class="font-serif text-2xl font-bold tracking-tighter text-gray-900 mb-4 block">AURA<span class="text-brand-gold">.</span></span>
+                    <p class="text-gray-500 text-sm leading-relaxed max-w-sm">
+                        Providing premium, elegant accessories that don't break the bank. Redefine your style with Aura Timepieces today.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-4 uppercase text-sm tracking-wider">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><a href="#" class="hover:text-brand-dark transition">Track Order</a></li>
+                        <li><a href="#" class="hover:text-brand-dark transition">Shipping Policy</a></li>
+                        <li><a href="#" class="hover:text-brand-dark transition">Returns & Refunds</a></li>
+                        <li><a href="#" class="hover:text-brand-dark transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-4 uppercase text-sm tracking-wider">Legal</h4>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><a href="#" class="hover:text-brand-dark transition">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-brand-dark transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-brand-dark transition">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
+                <p>&copy; 2024 Aura Timepieces. All rights reserved.</p>
+                <div class="mt-4 md:mt-0 flex space-x-4">
+                    <!-- Fake payment icons using text for simplicity in this demo -->
+                    <span class="px-2 py-1 border border-gray-200 rounded bg-gray-50 text-gray-500 font-bold">VISA</span>
+                    <span class="px-2 py-1 border border-gray-200 rounded bg-gray-50 text-gray-500 font-bold">MC</span>
+                    <span class="px-2 py-1 border border-gray-200 rounded bg-gray-50 text-gray-500 font-bold">AMEX</span>
+                    <span class="px-2 py-1 border border-gray-200 rounded bg-gray-50 text-gray-500 font-bold">PAYPAL</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Countdown Timer -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set countdown time (e.g., 2 hours, 45 minutes, 30 seconds from now)
+            // In a real dropship scenario, this is often reset on page load to create fake urgency
+            let totalSeconds = (2 * 3600) + (45 * 60) + 30; 
+
+            const hoursEl = document.getElementById('hours');
+            const minutesEl = document.getElementById('minutes');
+            const secondsEl = document.getElementById('seconds');
+
+            function updateTimer() {
+                if (totalSeconds <= 0) {
+                    // Optional: reset timer or show "Sale Ended"
+                    return;
+                }
+                
+                totalSeconds--;
+
+                const hours = Math.floor(totalSeconds / 3600);
+                const minutes = Math.floor((totalSeconds % 3600) / 60);
+                const seconds = totalSeconds % 60;
+
+                hoursEl.textContent = hours.toString().padStart(2, '0');
+                minutesEl.textContent = minutes.toString().padStart(2, '0');
+                secondsEl.textContent = seconds.toString().padStart(2, '0');
+            }
+
+            // Update every second
+            setInterval(updateTimer, 1000);
+        });
+    </script>
+</body>
+</html>
